@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <h2>ejs test</h2>
+
+    <h3>parameter1: <%=parameter1%></h3>
+    <div style="background-color: yellow;">
+      <%
+      for (var i=0; i<parameter1; i++) {
+      %>
+        <h3><%=i%></h3>
+        
+      <%
+	      }
+      %>
+    </div>
+    </body>
+</html>
