@@ -38,9 +38,9 @@ app.get('/', (req, res) => {
 	res.render('test', {parameter1: 5});
 });
 
+app.use('/static', express.static( __dirname + '/static'));
+
 app.listen(port, () => {
 console.log('8000!');
 });
-
-
 
